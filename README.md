@@ -85,8 +85,6 @@ Starvation is prevented through:
 
 Once a philosopher finishes eating, they  release both forks and their Butler permission, allowing waiting philosophers to proceed.
 
-### Are Deadlocks and Starvation Still Possible?
-
 #### Deadlocks
 
 We think that deadlocks are very unlikely due to the Butler limiting access to the dining table. Since not all philosophers can try to pick up forks at once, at least one philosopher is always able to eat and make progress.
