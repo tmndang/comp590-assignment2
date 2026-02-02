@@ -13,7 +13,7 @@
 * Each philosopher is assigned an `id` so that they can be easily identifiable in the output
 * Each philosopher has a `left` and `right` fork created through the `Fork` class, since each philosopher needs both forks to eat
 * Each philosopher also has access to a shared `Butler`, which controls access to the dining table
-  * **The use of the Butler (implemented using Semaphore) makes sure that only 4 out of 5 philosophers can try to eat at once.**
+  * The use of the Butler (implemented using Semaphore) makes sure that only 4 out of 5 philosophers can try to eat at once.
   * A philosopher must `acquire` permission from the Butler before picking up the forks
   * After eating, the philosopher `releases` the permission, allowing another waiting philosopher to enter
 
@@ -38,7 +38,7 @@ The `Fork` class contains two main methods:
 
 The `pickUpFork()` method locks the fork and the `putDownFork()` method unlocks it.  
 This makes sure that once a philosopher picks up a fork, no other philosopher can use it until it is put down after eating.  
-**This prevents multiple philosophers from holding the same fork at the same time.**
+This prevents multiple philosophers from holding the same fork at the same time.
 
 ### Spaghetti
 
